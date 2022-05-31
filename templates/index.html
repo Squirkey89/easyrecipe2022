@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Recipes</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/97488dfb41.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1><i class="fa-solid fa-hat-chef"></i>Easy Recipes</h1>
+                <h2 class="logo">Cooking made easy</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">RECIPES</a>
+                    <li class="nav-item"><a class="nav-link" href="#">CREATE RECIPE</a>
+                    <li class="nav-item"><a class="nav-link" href="#">SIGN UP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">LOGIN</a>
+                    <li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="row">
+            <div class="container-img">
+                {% load static %}
+                <img class="image" src="{% static '/images/food.jpg' %}" alt="home">
+
+                <div class="centered">Welcome to Easy Recipes. You'll find simple, step-by-step recipes that you can
+                    make yourself.</div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper">
+        <div class="info">
+            <h1 class="title text-center">WHAT WE DO?</h1>
+            <div class="text-center">
+                <p>We want to create a library of tasty dishes, and want to show you how easy it is to prepare
+                    these meals yourself.</p>
+                <p>Using this website, you can discover which dishes to prepare for today, tomorrow, the rest of the
+                    week, and on special occasions.</p>
+                <p>This website will be community-driven. Share your family recipes that your
+                    parents and grandparents
+                    taught you that will be used for generations to come. </p>
+                <p>If you would like to add a recipe, just go to the sign up page and after you are signed up, you can
+                    add recipes.</p>
+                <p>All the recipes you have created will appear on the recipe page, where you can browse them and those
+                    created by others.</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="container">
+        <div class="row">
+            <h1 class="title text-center">RECIPES</h1>
+                    <ul class="image-list-small">
+                        <li>
+                          <a href="#"><img src="{% static '/images/iStock-187990397-1024x686-1.jpg' %}" alt="" />
+                          <div class="details">
+                            <h3><a href="#">Add Receipe</a></h3>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#"><img src="{% static '/images/Spaghetti-Sauce-13.jpg' %}" alt=""></a>
+                          <div class="details">
+                            <h3><a href="#">Recipes</a></h3>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#"><img src="{% static '/images/su.jpeg' %}" alt=""></a>
+                          <div class="details">
+                            <h3><a href="#">Sign Up</a></h3>
+                          </div>
+                        </li>
+                </ul>
+    </section>
+    <section>
+        <footer class="bg-dark text-white pt-5 pb-4">
+            <div class="row align-items-center">
+
+                <div class="col-md-7 col-lg-8">
+                    <p class="foot-logo">Copyright reserved by:<strong class="font-weight-bold text-warning"> Easy
+                            Recipe&copy;</strong></p>
+
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font: size 23px;"><i
+                                        class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font: size 23px;"><i
+                                        class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font: size 23px;"><i
+                                        class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font: size 23px;"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font: size 23px;"><i
+                                        class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+        </footer>
+    </section>
+</body>
+
+</html>
